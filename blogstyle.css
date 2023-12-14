@@ -1,0 +1,81 @@
+body {
+    background-color: slategray;
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+    grid-template-columns: 195px 450px 450px;
+    grid-template-rows: 100px 600px 60px;
+    grid-template-areas: "hd hd hd hd hd hd"
+                         "sd ct ct ct ct ct"
+                         "ft ft ft ft ft ft";
+    border: 4px solid steelblue;
+    justify-content: center;
+
+}
+
+.box {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border: 2px solid skyblue;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sd;
+    font-size: 14px;
+} 
+.content {
+    grid-area: ct;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+#nestedGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    border: 1px solid skyblue;
+  }
+
+  .photobox{
+    width: 235px;
+    height: 595px;
+    border: 1px solid skyblue;
+  }
+
+  #one{
+    background-image: url('Roblox.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+  }
+  
+  #two{
+    background-image: url('Hogwarts\ Legacy.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #three{
+    background-image: url('Like\ A\ Dragon\ Isizin!.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #four{
+    background-image: url('ResidentEvilRevelations2.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
